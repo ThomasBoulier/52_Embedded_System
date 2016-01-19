@@ -1,22 +1,21 @@
 # 52_Embedded_System
-BE de Système embarqué : Mise en place d'un station de cryptage
+##Embedded System : Autonomous encryption station
 
 Thomas Boulier
 Anthony Calpas
 Camille Finand
 Antoine Marck
 
-##Station de cryptage autonome :
 
-##Bonnes pratiques :
-Utilisation de git, des autotools, un README.
+###Fair practices :
+Use of git, autotools, the present README.
 
 
-##Version 0.1:
--Script lancé par init.d qui detecte un clé USB connectée sur la carte (voir /dev/sda1, check périodique)
--On monte la clé.
--On la démonte.
--La LED clignote trois fois.
+###0.1 Version:
+-Script run by init.d which detect a USB device connected on the card (check /dev/sda1 periodically)
+-Mounting the device.
+-Unmounting the device.
+-The LED flashes 3 times.
 
-##Version 0.2:
--Toute les n secondes, un clignotement long de la LED.
+###0.2 Version:
+-Every n secondes,a long flash of the LED for each check.
