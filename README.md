@@ -1,9 +1,9 @@
 # 52_Embedded_System
 ##Embedded System : Autonomous encryption station
 
-Thomas Boulier
-Anthony Calpas
-Camille Finand
+Thomas Boulier, 
+Anthony Calpas, 
+Camille Finand, 
 Antoine Marck
 
 
