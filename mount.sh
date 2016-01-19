@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 i=0
 while [ $i -le 1 ]
