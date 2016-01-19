@@ -4,7 +4,7 @@ i=0
 while [ $i -le 1 ]
 do
    if [ -b /dev/sda1 ]
-	then	
+	then 
 	break
 
 fi
@@ -22,4 +22,13 @@ fi
 
 
 echo out > /sys/class/gpio/gpio21/direction
-echo 1 > /sys/class/gpio/gpio21/value
+
+unmount /dev/sda1
+
+for j in 1 2 3 
+do
+	echo 1 > /sys/class/gpio/gpio21/value
+	sleep 1
+	echo 0 > /sys/class/gpio/gpio21/value
+	sleep 1
+done
