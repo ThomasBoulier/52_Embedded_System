@@ -42,7 +42,7 @@ After the mounting-unmounting, the system return in the idle state.
 - Between mounting & unmounting, a encryption programm is called.
 - The encryption is the XorEncryption (cf https://github.com/KyleBanks/XOREncryption/tree/master/C)
 
-- The programm is a C programm, crosscompiled using https://github.com/pblottiere/embsys/tree/master/labs/4_armadeus
+- The programm is a C programm, crosscompiled using https://github.com/pblottiere/armadeus, with *make am28_defconfig*
 
 
 
