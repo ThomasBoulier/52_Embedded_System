@@ -19,7 +19,7 @@ Use of git, autotools, the present README.
 
 ##Use:
 - Boot.
-- Log
+- [Log]
 - The LED should slowly blink : the board is in idle state.
 - Plug the USB stick.
 - The board will enter in busy state : it will mount the stick, encrypt the file called "XXX", then unmount the stick.
@@ -51,6 +51,12 @@ After the mounting-unmounting, the system return in the idle state.
 
 - The programm is a C programm, crosscompiled using https://github.com/pblottiere/armadeus, with *make am28_defconfig*
 
+###1.1 Version:
+- Decrypt the file "todecrypt.xor"
 
-
+###1.2 Version:
+- Encrypt the whole directory */be* (unimplemented)
+ 
+###1.3 Version:
+- A bash *autoupdate.sh* on the device do the Setup process described higher.
 
