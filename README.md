@@ -10,6 +10,13 @@
 ###Fair practices :
 Use of git, autotools, the present README.
 
+##Setup : (versions before 1.3)
+- Create directory */be* if it does not exist.
+- Put *mountKey.sh* in it.
+- Put binaries *encrypt* and *decrypt* in it
+- Put daemon *S99mount* in /etc/init.d
+- syncronize the RAM.
+
 ##Use:
 - Boot.
 - Log
