@@ -36,6 +36,7 @@ while [ $x -le 1 ]
 
 			fi
 			mount /dev/sda1 /media/external/
+			/be/cryptit
 			umount /media/external/
 
 			for j in 1 2 3 
