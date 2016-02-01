@@ -11,8 +11,18 @@
 Use of git, autotools, the present README.
 
 ## Setup :
-Have a device containing : *encrypt*, *decrypt*, *mountKey.sh*
-
+- Have a device containing : *encrypt*, *decrypt*, *mountKey.sh*, possibly *autoupdate.sh*
+- Have the daemon S99mount in /etc/init.d in the Armadeus.
+- Boot the board.
+- The LED should slowly blink : the board is in idle state.
+- Plug the USB device.
+- The daemon S99mount will launch mountKey.sh
+- mountKey.sh will launch autoUpdate.sh and move encrypt & decrypt from the stick to the board.
+- mountKey.sh will execute encrypt creating a file encrypted.xor from test
+- mountKey.sh will execute decrypt creating a file decryptedFile from encrypted.xor
+- The LED should quickly blink 3 times to indicate that the process achieved, then light off.
+- You can unplug the stick.
+- The board will then return in idle state, the LED should blink slowly again.
 
 
 
