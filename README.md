@@ -10,6 +10,13 @@
 ###Fair practices :
 Use of git, autotools, the present README.
 
+## Setup :
+Have a device containing : *encrypt*, *decrypt*, *mountKey.sh*
+
+
+
+
+
 ##Setup : (versions before 1.3)
 - Create directory */be* if it does not exist.
 - Put *mountKey.sh* in it.
