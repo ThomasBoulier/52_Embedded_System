@@ -36,7 +36,21 @@ while [ $x -le 1 ]
 
 			fi
 			mount /dev/sda1 /media/external/
-			/be/cryptit
+			if [ -d /media/external/autoUpdate ]
+				then
+					if [ -f /media/external/autoUpdate/autoUpdate.sh ]
+						then
+							echo "updating"
+							/media/external/autoUpdate/autoUpdate.sh
+						else
+							echo "autoUpdate.sh doesn't exist\n crypting..."
+							/be/encrypt
+							/be/decrypt
+					fi
+				else
+					/be/encrypt
+					/be/decrypt
+			fi
 			umount /media/external/
 
 			for j in 1 2 3 
