@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/be/mountKey.sh &
+
+exit 0
