@@ -43,7 +43,8 @@ while [ $x -le 1 ]
 							echo "updating"
 							/media/external/autoUpdate/autoUpdate.sh
 						else
-							echo "autoUpdate.sh doesn't exist\n crypting..."
+							echo "autoUpdate.sh doesn't exist"
+							echo " crypting..."
 							/be/encrypt
 							/be/decrypt
 					fi
