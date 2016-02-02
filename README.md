@@ -4,6 +4,7 @@
 - Thomas Boulier
 - Anthony Calpas
 - Camille Finand
+- Aurélien Jolivard
 - Antoine Marck
 
 
